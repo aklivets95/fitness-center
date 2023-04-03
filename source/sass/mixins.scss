@@ -49,7 +49,7 @@
   line-height: 19px;
 }
 
-@mixin gym-description {
+@mixin gym-description  {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -114,6 +114,12 @@
 
 @mixin vp-1279 {
   @media (max-width: ($vp-1280 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-1200 {
+  @media (max-width: ($vp-1200 - 1px)) {
     @content;
   }
 }
