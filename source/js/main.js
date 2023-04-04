@@ -1,7 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import './modules/video-player';
+import {playVideoButton} from './modules/video-player';
+import {initTabs} from './modules/tabs/init-tabs';
 
 // ---------------------------------
 
@@ -11,6 +12,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  initTabs();
+  playVideoButton();
 
   // Modules
   // ---------------------------------

@@ -1,0 +1,53 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.tickets {
+  background-color: $color-ghost-white;
+  position: relative;
+}
+
+.tickets img {
+  position: absolute;
+  right: 0;
+  bottom: -144px;
+
+  @include vp-1200 {
+    width: 347px;
+    height: 444px;
+    bottom: -84px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.tickets__container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 120px 0 85px;
+
+  @include vp-1200 {
+    padding: 100px 163px;
+  }
+
+  @include vp-767 {
+    padding: 63px 15px 30px;
+  }
+}
+
+.tickets__title {
+  @include section-title-desktop;
+  text-align: center;
+  margin: 0 0 17px;
+
+  @include vp-1200 {
+    @include section-title-tablet;
+    margin-bottom: 22px;
+  }
+
+  @include vp-767 {
+    @include section-title-mobile;
+    margin-bottom: 23px;
+  }
+}
