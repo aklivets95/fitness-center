@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {playVideoButton} from './modules/video-player';
 import {initTabs} from './modules/tabs/init-tabs';
+import {showSlideContent} from './modules/show-slide';
 
 // ---------------------------------
 
@@ -14,6 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
   initTabs();
   playVideoButton();
+  showSlideContent();
 
   // Modules
   // ---------------------------------

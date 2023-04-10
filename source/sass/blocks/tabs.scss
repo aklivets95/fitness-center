@@ -247,6 +247,10 @@
     color: $color-default-white;
     background-image: $button-gradient;
   }
+
+  @include focus {
+    outline: 2px solid $color-torch-red;
+  }
 }
 
 .tabs--unset .tabs__content {

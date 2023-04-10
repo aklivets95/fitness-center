@@ -9,7 +9,7 @@
   max-width: 1160px;
   margin: 0 auto;
   display: flex;
-  padding: 120px 0 106px;
+  padding: 120px 0 107px;
 
   @include vp-1200 {
     padding: 101px 45px;
@@ -17,13 +17,20 @@
   }
 
   @include vp-767 {
-    padding: 71px 15px;
+    padding: 71px 15px 64px;
     display: block;
   }
 }
 
 .promo__image-container {
   flex-shrink: 0;
+  background-color: #000146;
+  display: flex;
+  align-items: center;
+
+  @include vp-767 {
+    display: block;
+  }
 }
 
 .promo__image-container img {
