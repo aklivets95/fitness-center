@@ -6,11 +6,11 @@
   padding: 149px 0 117px;
 
   @include vp-1200 {
-    padding: 92px 0 100px;
+    padding: 92px 0;
   }
 
   @include vp-767 {
-    padding: 63px 0 70px;
+    padding: 63px 0 64px;
   }
 }
 
@@ -158,6 +158,10 @@
   border-bottom: 1px solid $color-resolution-blue;
   align-self: flex-start;
 
+  @include vp-1200 {
+    font-size: 12px;
+  }
+
   @include vp-767 {
     align-self: center;
     margin: 0;
@@ -176,6 +180,10 @@
 .stocks__link--white {
   color: $color-default-white;
   border-color: $color-default-white;
+
+  @include vp-1200 {
+    font-size: 14px;
+  }
 }
 
 .stocks__list {

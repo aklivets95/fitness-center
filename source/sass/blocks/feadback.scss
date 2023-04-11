@@ -1,0 +1,153 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.feadback {
+  background-color: $color-default-white;
+  padding: 0 0 120px;
+
+  @include vp-1200 {
+    padding: 0 0 100px;
+  }
+
+  @include vp-767 {
+    padding: 0 0 70px;
+  }
+}
+
+.feadback h2 {
+  @include section-title-desktop;
+  margin: 0 47px 37px;
+  text-align: center;
+
+  @include vp-1200 {
+    @include section-title-tablet;
+    margin: 0 45px 40px;
+  }
+
+  @include vp-767 {
+    @include section-title-mobile;
+    margin: 0 15px 42px;
+  }
+}
+
+.feadback__container {
+  max-width: 673px;
+  margin: 0 auto;
+  position: relative;
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}
+
+.feadback__swiper {
+  position: relative;
+  overflow-x: clip;
+  padding: 0 20px;
+  max-width: 600px;
+  margin: 0 auto;
+
+  @include vp-767 {
+    margin: 0 20px;
+    padding: 0 12px;
+  }
+}
+
+.feadback__swiper-slide {
+  background-color: $color-resolution-blue;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  column-gap: 28px;
+  row-gap: 14px;
+  padding: 62px 62px 56px;
+  transition: box-shadow ease 0.4s;
+
+  @include vp-767 {
+    column-gap: 15px;
+    row-gap: 15px;
+    padding: 40px 25px 34px;
+    grid-template-columns: 84px 1fr;
+  }
+
+  @include hover {
+    box-shadow: 0px 0px 35px rgba(42, 59, 99, 0.17);
+  }
+}
+
+.feadback__swiper-image {
+  grid-row: 1 / 3;
+
+  @include vp-767 {
+    grid-row: inherit;
+    margin-left: 15px;
+  }
+}
+
+.feadback__swiper-image img {
+  width: 68px;
+  height: 68px;
+}
+
+.feadback__swiper-slide h3 {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  color: $color-default-white;
+
+  @include vp-767 {
+    align-self: center;
+    line-height: 140%;
+  }
+}
+
+.feadback__swiper-slide p {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: $color-default-white;
+
+  @include vp-767 {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+}
+
+.feadback__swiper-button {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: calc(50% - 17px);
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  width: 10px;
+  height: 19px;
+}
+
+.feadback__swiper-button--next {
+  right: 0;
+
+  @include vp-767 {
+    right: 15px;
+  }
+}
+
+.feadback__swiper-button--prev {
+  left: 0;
+  transform: rotate(180deg);
+
+  @include vp-767 {
+    left: 15px;
+  }
+}
+
+.feadback__swiper-button--disabled {
+  cursor: default;
+  opacity: 0.35;
+}

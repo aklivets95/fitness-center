@@ -23,3 +23,13 @@ const swiper = new Swiper('.trainers__swiper', {
     },
   },
 });
+
+const feadbackSwiper = new Swiper('.feadback__swiper', {
+  navigation: {
+    disabledClass: 'feadback__swiper-button--disabled',
+    nextEl: '.feadback__swiper-button--next',
+    prevEl: '.feadback__swiper-button--prev',
+  },
+  slidesPerView: 1,
+  spaceBetween: 20,
+});
