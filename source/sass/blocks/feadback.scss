@@ -84,8 +84,11 @@
 }
 
 .feadback__swiper-image img {
-  width: 68px;
-  height: 68px;
+
+  @include vp-767 {
+    width: 68px;
+    height: 68px;
+  }
 }
 
 .feadback__swiper-slide h3 {

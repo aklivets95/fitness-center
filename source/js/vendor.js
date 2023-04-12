@@ -34,3 +34,5 @@ const feadbackSwiper = new Swiper('.feadback__swiper', {
   slidesPerView: 1,
   spaceBetween: 20,
 });
+
+export {swiper, feadbackSwiper};

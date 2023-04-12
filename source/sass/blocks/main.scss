@@ -1,0 +1,10 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.main__wrapper {
+  display: flex;
+
+  @include vp-1200 {
+    display: block;
+  }
+}
