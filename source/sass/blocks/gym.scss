@@ -58,6 +58,7 @@
   @include vp-767 {
     text-align: left;
     margin-bottom: 5px;
+
     @include section-title-mobile;
   }
 }
@@ -102,7 +103,7 @@
     margin: 0 auto;
 
     &:not(:last-child) {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
 
     &--desktop {
@@ -167,7 +168,6 @@
 }
 
 .gym__video-player {
-
   @include vp-1200 {
     width: 266px;
     height: 167px;
@@ -209,12 +209,11 @@
   @include vp-767 {
     left: 50%;
     top: 50%;
-    transform: translate(-49%,-54%);
+    transform: translate(-49%, -54%);
   }
 }
 
 .gym__video-button svg {
-
   @include vp-1200 {
     width: 73px;
     height: 73px;

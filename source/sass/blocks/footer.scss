@@ -127,6 +127,7 @@
 
 .footer__navigation-link--mobile {
   display: none;
+
   @include vp-767 {
     display: block;
   }

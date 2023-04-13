@@ -4,11 +4,14 @@
 .proposal {
   background-color: $color-sapphire;
   width: 50%;
+  max-width: 683px;
+  margin-left: auto;
   padding: 71px 170px 56px 100px;
 
   @include vp-1200 {
     width: 100%;
     padding: 62px 163px 66px 133px;
+    max-width: none;
   }
 
   @include vp-767 {

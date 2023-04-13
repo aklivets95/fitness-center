@@ -2184,6 +2184,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #102654;
 }
 
 .header {
@@ -3476,8 +3477,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 10px;
-  height: 19px;
 }
 
 .feadback__swiper-button--next {
@@ -3499,6 +3498,8 @@ button,
 .proposal {
   background-color: #102654;
   width: 50%;
+  max-width: 683px;
+  margin-left: auto;
   padding: 71px 170px 56px 100px;
 }
 
@@ -3521,6 +3522,8 @@ button,
 
 .contacts__container {
   padding: 56px 159px 64px 120px;
+  max-width: 683px;
+  margin-right: auto;
 }
 
 .contacts__container h2 {
@@ -3639,7 +3642,7 @@ button,
 
 .form__input span {
   position: absolute;
-  top: -20px;
+  top: -30px;
   left: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -3853,6 +3856,7 @@ button,
 @media (max-width: 1199px) {
   .main__wrapper {
     display: block;
+    background-color: transparent;
   }
 
   .header {
@@ -4306,6 +4310,7 @@ button,
   .proposal {
     width: 100%;
     padding: 62px 163px 66px 133px;
+    max-width: none;
   }
 
   .proposal h1 {
@@ -4322,6 +4327,7 @@ button,
 
   .contacts__container {
     padding: 62px 179px 66px 133px;
+    max-width: none;
   }
 
   .contacts__container h2 {
@@ -4881,6 +4887,11 @@ button,
   .feadback__swiper-slide p {
     grid-column: 1/-1;
     text-align: center;
+  }
+
+  .feadback__swiper-button {
+    width: 10px;
+    height: 19px;
   }
 
   .feadback__swiper-button--next {

@@ -14,9 +14,12 @@
 
 .contacts__container {
   padding: 56px 159px 64px 120px;
+  max-width: 683px;
+  margin-right: auto;
 
   @include vp-1200 {
     padding: 62px 179px 66px 133px;
+    max-width: none;
   }
 
   @include vp-767 {

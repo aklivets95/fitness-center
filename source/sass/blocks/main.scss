@@ -3,8 +3,10 @@
 
 .main__wrapper {
   display: flex;
+  background-color: $color-sapphire;
 
   @include vp-1200 {
     display: block;
+    background-color: transparent;
   }
 }
