@@ -22,11 +22,12 @@ export class Tabs {
 
   _documentClickHandler(evt) {
     const target = evt.target;
-    if (!target.closest('[data-tabs="control"]')) {
+    const control = target.closest('[data-tabs="control"]');
+    const tabElements = document.querySelectorAll('[data-tabs="element"]');
+    if (!target.closest('[data-tabs="control"]') || !tabElements[control.dataset.index]) {
       return;
     }
     evt.preventDefault();
-    const control = target.closest('[data-tabs="control"]');
     this.openTab(control);
   }
 

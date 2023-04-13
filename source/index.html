@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Описание проекта">
   <title>Фитнес-центр</title>
+  <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/AlumniSans-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -84,7 +85,7 @@
         <div class="gym__video-container">
           <iframe class='gym__video-player' width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw"
             title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
             allowfullscreen tabindex="-1"></iframe>
           <picture>
             <source type="image/webp" media="(max-width: 767px)"
@@ -298,7 +299,7 @@
                   <img src="img/trainers/trainer-1.jpg" srcset="img/trainers/trainer-12x.jpg 2x" width="260"
                     height="294" alt="Фото тренера.">
                 </picture>
-                <p>Анна Павлова</p>
+                <span>Анна Павлова</span>
               </div>
               <div class="trainers__swiper-item-content">
                 <h3>Анна Павлова</h3>
@@ -317,7 +318,7 @@
                   <img src="img/trainers/trainer-2.jpg" srcset="img/trainers/trainer-22x.jpg 2x" width="260"
                     height="294" alt="Фото тренера.">
                 </picture>
-                <p>Алексей Лавров</p>
+                <span>Алексей Лавров</span>
               </div>
               <div class="trainers__swiper-item-content">
                 <h3>Алексей Лавров</h3>
@@ -336,7 +337,7 @@
                   <img src="img/trainers/trainer-3.jpg" srcset="img/trainers/trainer-32x.jpg 2x" width="260"
                     height="294" alt="Фото тренера.">
                 </picture>
-                <p>Александр Пашков</p>
+                <span>Александр Пашков</span>
               </div>
               <div class="trainers__swiper-item-content">
                 <h3>Александр Пашков</h3>
@@ -355,7 +356,7 @@
                   <img src="img/trainers/trainer-4.jpg" srcset="img/trainers/trainer-42x.jpg 2x" width="260"
                     height="294" alt="Фото тренера.">
                 </picture>
-                <p>Мария Кетова</p>
+                <span>Мария Кетова</span>
               </div>
               <div class="trainers__swiper-item-content">
                 <h3>Мария Кетова</h3>
@@ -374,7 +375,7 @@
                   <img src="img/trainers/trainer-2.jpg" srcset="img/trainers/trainer-22x.jpg 2x" width="260"
                     height="294" alt="Фото тренера.">
                 </picture>
-                <p>Гурам Нармания</p>
+                <span>Гурам Нармания</span>
               </div>
               <div class="trainers__swiper-item-content">
                 <h3>Гурам Нармания</h3>
@@ -393,7 +394,7 @@
                   <img src="img/trainers/trainer-1.jpg" srcset="img/trainers/trainer-12x.jpg 2x" width="260"
                     height="294" alt="Фото тренера.">
                 </picture>
-                <p>Екатерина Старшова</p>
+                <span>Екатерина Старшова</span>
               </div>
               <div class="trainers__swiper-item-content">
                 <h3>Екатерина Старшова</h3>
@@ -412,7 +413,7 @@
                   <img src="img/trainers/trainer-3.jpg" srcset="img/trainers/trainer-32x.jpg 2x" width="260"
                     height="294" alt="Фото тренера.">
                 </picture>
-                <p>Константин Заруцкий</p>
+                <span>Константин Заруцкий</span>
               </div>
               <div class="trainers__swiper-item-content">
                 <h3>Константин Заруцкий</h3>
@@ -431,7 +432,7 @@
                   <img src="img/trainers/trainer-4.jpg" srcset="img/trainers/trainer-42x.jpg 2x" width="260"
                     height="294" alt="Фото тренера.">
                 </picture>
-                <p>Наталья Ибадин</p>
+                <span>Наталья Ибадин</span>
               </div>
               <div class="trainers__swiper-item-content">
                 <h3>Наталья Ибадин</h3>
@@ -461,7 +462,7 @@
       <div class="advantages__container">
         <h2 class="advantages__title">Наши преимущества</h2>
         <ul class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--one">
             <div class="advantages__item-count">
               <b>900</b>
               <span>кв/м</span>
@@ -471,7 +472,7 @@
               <p>Занимайтесь без очередей и&nbsp;толпучки</p>
             </div>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--two">
             <div class="advantages__item-count">
               <b>70</b>
               <span>машин</span>
@@ -490,7 +491,7 @@
               <p>Современные тренажеры на&nbsp;все группы мышц</p>
             </div>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--four">
             <div class="advantages__item-count">
               <b>350</b>
               <span>мест</span>
@@ -555,7 +556,7 @@
         </ul>
       </div>
     </section>
-    <section class="main__feedback feadback">
+    <section class="main__feadback feadback">
       <h2>Отзывы</h2>
       <div class="feadback__container">
         <div class="feadback__swiper swiper-container">
@@ -608,12 +609,12 @@
             <div class="form__input form__input-name" data-validate-type="text" data-message-base="Обязательное поле"
               data-required>
               <label class="visually-hidden" for="name">Имя</label>
-              <input id="name" type="text" placeholder="Имя" required>
+              <input id="name" type="text" name="field-name" placeholder="Имя" required>
             </div>
             <div class="form__input form__input-phone" data-validate-type="phone" data-message-base="Обязательное поле"
               data-message-extra="Проверьте корректность заполнения поля" data-required>
               <label class="visually-hidden" for="phone">Телефон</label>
-              <input id="phone" type="tel" placeholder="Телефон" title="Только цифры, 11 цифр" required>
+              <input id="phone" type="tel" name="field-number" placeholder="Телефон" title="Только цифры, 11 цифр" required>
             </div>
           </div>
           <button class="form__submit" type="submit">Отправить</button>
@@ -627,7 +628,7 @@
               <h3>Адрес:</h3>
               <p>г. Омск, ул. 60 лет Октября, 7</p>
             </li>
-            <li class="contacts__item">
+            <li class="contacts__item contacts__item--custom">
               <h3>График работы:</h3>
               <p>Пн-Вс: с 8:00 до 22:00</p>
             </li>

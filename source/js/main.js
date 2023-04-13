@@ -11,7 +11,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
   // ---------------------------------
-
   iosVhFix();
   initTabs();
   playVideoButton();

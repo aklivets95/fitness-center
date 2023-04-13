@@ -92,12 +92,14 @@
 }
 
 .tabs__content {
+  min-height: 100px;
   margin-bottom: 40px;
 
   transition: height 0.3s;
 }
 
 .tabs__element {
+  min-height: 100px;
   width: 100%;
   background-color: transparent;
   display: grid;
