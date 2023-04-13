@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {playVideoButton} from './modules/video-player';
 import {initTabs} from './modules/tabs/init-tabs';
 import {showSlideContent} from './modules/show-slide';
+import './modules/init-swiper';
 
 // ---------------------------------
 
