@@ -22,14 +22,14 @@ const swiper = new Swiper('.trainers__swiper', {
   },
 });
 
-const feadbackSwiper = new Swiper('.feadback__swiper', {
+const feedbackSwiper = new Swiper('.feedback__swiper', {
   navigation: {
-    disabledClass: 'feadback__swiper-button--disabled',
-    nextEl: '.feadback__swiper-button--next',
-    prevEl: '.feadback__swiper-button--prev',
+    disabledClass: 'feedback__swiper-button--disabled',
+    nextEl: '.feedback__swiper-button--next',
+    prevEl: '.feedback__swiper-button--prev',
   },
   slidesPerView: 1,
   spaceBetween: 20,
 });
 
-export {swiper, feadbackSwiper};
+export {swiper, feedbackSwiper};
