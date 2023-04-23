@@ -35,9 +35,20 @@
         <div class="primary__text-container">
           <p class="primary__city">омск</p>
           <div class="primary__text-wrapper">
-            <p class="primary__description">Тренажёрный зал
+            <ul class="primary__description-list">
+              <li class="primary__description-item">
+                Тренажёрный зал
+              </li>
+              <li class="primary__description-item">
+                Групповые занятия
+              </li>
+              <li class="primary__description-item">
+                Кардио-зона
+              </li>
+            </ul>
+            <!-- <p class="primary__description">Тренажёрный зал
               Групповые занятия
-              Кардио-зона</p>
+              Кардио-зона</p> -->
             <h2 class="primary__title">Фитнес центр</h2>
           </div>
           <a class="primary__link" href="#tickets">Купить абонемент</a>
@@ -290,6 +301,11 @@
     <section class="main__trainers trainers">
       <div class="trainers__container">
         <h2 class="trainers__title">Тренеры</h2>
+        <button class="trainers__swiper-button trainers__swiper-button--prev" type="button">
+          <svg width="16" height="32">
+            <use href="img/sprite.svg#slider-arrow"></use>
+          </svg>
+        </button>
         <div class="trainers__swiper swiper-container">
           <div class="trainers__swiper-wrapper swiper-wrapper">
             <div class="trainers__swiper-slide swiper-slide">
@@ -446,11 +462,6 @@
             </div>
           </div>
         </div>
-        <button class="trainers__swiper-button trainers__swiper-button--prev" type="button">
-          <svg width="16" height="32">
-            <use href="img/sprite.svg#slider-arrow"></use>
-          </svg>
-        </button>
         <button class="trainers__swiper-button trainers__swiper-button--next" type="button">
           <svg width="16" height="32">
             <use href="img/sprite.svg#slider-arrow"></use>
