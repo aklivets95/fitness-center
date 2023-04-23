@@ -2930,7 +2930,9 @@ button,
 .trainers__swiper {
   position: relative;
   overflow-x: hidden;
-  padding: 0 25px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1160px;
 }
 
 .trainers__swiper-button {
@@ -3484,6 +3486,10 @@ button,
   display: grid;
   -ms-grid-columns: 80px 1fr;
   grid-template-columns: 80px 1fr;
+  -ms-grid-rows: -webkit-max-content;
+  -ms-grid-rows: max-content;
+  grid-template-rows: -webkit-max-content;
+  grid-template-rows: max-content;
   -webkit-column-gap: 28px;
   -moz-column-gap: 28px;
   column-gap: 28px;
@@ -3494,6 +3500,7 @@ button,
   -o-transition: box-shadow ease 0.4s;
   transition: box-shadow ease 0.4s;
   transition: box-shadow ease 0.4s, -webkit-box-shadow ease 0.4s;
+  height: auto;
 }
 
 .feedback__swiper-image {

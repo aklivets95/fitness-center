@@ -40,7 +40,10 @@
 .trainers__swiper {
   position: relative;
   overflow-x: hidden;
-  padding: 0 25px;
+  // padding: 0 25px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1160px;
 }
 
 .trainers__swiper-button {
