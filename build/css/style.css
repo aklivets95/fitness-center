@@ -3478,6 +3478,9 @@ button,
   padding: 0 20px;
   max-width: 600px;
   margin: 0 auto;
+  -webkit-transition: height ease-in 0.4s;
+  -o-transition: height ease-in 0.4s;
+  transition: height ease-in 0.4s;
 }
 
 .feedback__swiper-slide {
@@ -3500,7 +3503,6 @@ button,
   -o-transition: box-shadow ease 0.4s;
   transition: box-shadow ease 0.4s;
   transition: box-shadow ease 0.4s, -webkit-box-shadow ease 0.4s;
-  height: auto;
 }
 
 .feedback__swiper-image {

@@ -46,6 +46,7 @@
   padding: 0 20px;
   max-width: 600px;
   margin: 0 auto;
+  transition: height ease-in 0.4s;
 
   @include vp-767 {
     margin: 0 20px;
@@ -62,7 +63,7 @@
   row-gap: 14px;
   padding: 62px 62px 56px;
   transition: box-shadow ease 0.4s;
-  height: auto;
+  // height: auto;
 
   @include vp-767 {
     column-gap: 15px;

@@ -53,6 +53,8 @@ const feedbackSwiper = new Swiper('.feedback__swiper', {
   },
   slidesPerView: 1,
   spaceBetween: 20,
+  autoHeight: true,
 });
+
 
 export {swiper, feedbackSwiper};
