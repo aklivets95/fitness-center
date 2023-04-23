@@ -5142,7 +5142,7 @@ button,
   }
 
   .tabs__control:hover:not(.focus-visible) {
-    opacity: 0.5;
+    color: #d10a42;
   }
 
   .tabs__element-wrapper:hover:not(.focus-visible) {
