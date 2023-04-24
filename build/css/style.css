@@ -2227,6 +2227,16 @@ button,
   align-items: flex-start;
 }
 
+.header__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
 .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2342,6 +2352,8 @@ button,
   padding: 0;
   list-style-type: none;
   max-width: 113px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .primary__description-item {
@@ -2974,6 +2986,7 @@ button,
   width: 260px;
   position: relative;
   background-color: #102654;
+  aspect-ratio: 1/1.13;
 }
 
 .trainers__swiper-slide:focus {
@@ -3030,7 +3043,7 @@ button,
   visibility: hidden;
   opacity: 0;
   z-index: 1;
-  min-height: 294px;
+  height: 100%;
   padding: 51px 10px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3474,7 +3487,8 @@ button,
 
 .feedback__swiper {
   position: relative;
-  overflow-x: clip;
+  overflow-x: hidden;
+  overflow-y: hidden;
   padding: 0 20px;
   max-width: 600px;
   margin: 0 auto;
@@ -3766,7 +3780,7 @@ button,
 }
 
 .form__submit.focus-visible:focus {
-  outline: 3px solid #000000;
+  outline: 4px solid #000000;
 }
 
 .footer {
@@ -4051,6 +4065,7 @@ button,
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
+    top: inherit;
   }
 
   .gym__video-player {
@@ -4188,6 +4203,10 @@ button,
     margin: 0 0 31px;
   }
 
+  .trainers__swiper {
+    padding: 0 25px;
+  }
+
   .trainers__swiper-button {
     top: calc(50% - 26px);
   }
@@ -4198,6 +4217,11 @@ button,
 
   .trainers__swiper-button--prev {
     left: 45px;
+  }
+
+  .trainers__swiper-slide {
+    min-height: 294px;
+    aspect-ratio: 1/1;
   }
 
   .trainers__swiper-slide--touch-stile {
@@ -4548,7 +4572,7 @@ button,
     top: 29px;
     left: 8px;
     min-width: 113px;
-    max-width: none;
+    max-width: 40%;
   }
 
   .primary__link {
@@ -4725,6 +4749,10 @@ button,
     margin-bottom: 41px;
   }
 
+  .trainers__swiper {
+    padding: 0 25px;
+  }
+
   .trainers__swiper-button {
     width: 10px;
     height: 19px;
@@ -4737,6 +4765,10 @@ button,
 
   .trainers__swiper-button--prev {
     left: 14px;
+  }
+
+  .trainers__swiper-slide {
+    min-height: 274px;
   }
 
   .trainers__swiper-item-content {

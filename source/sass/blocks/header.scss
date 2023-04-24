@@ -37,6 +37,13 @@
   }
 }
 
+.header__links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
 .header__logo {
   display: flex;
 

@@ -42,7 +42,8 @@
 
 .feedback__swiper {
   position: relative;
-  overflow-x: clip;
+  overflow-x: hidden;
+  overflow-y: hidden;
   padding: 0 20px;
   max-width: 600px;
   margin: 0 auto;

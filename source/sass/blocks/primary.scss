@@ -157,6 +157,7 @@
   padding: 0;
   list-style-type: none;
   max-width: 113px;
+  flex-shrink: 0;
 
   @include vp-1200 {
     margin-bottom: 22px;
@@ -167,7 +168,7 @@
     top: 29px;
     left: 8px;
     min-width: 113px;
-    max-width: none;
+    max-width: 40%;
   }
 }
 

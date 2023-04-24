@@ -154,6 +154,7 @@
     left: 50%;
     right: inherit;
     transform: translateX(-50%);
+    top: inherit;
   }
 
   @include vp-767 {
